@@ -1,0 +1,49 @@
+label{
+    margin: 10px;
+}
+
+.picker{
+    margin: 5px;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 225px;
+}
+
+.picker button {
+    border-radius: 8px;
+    border: none;
+    margin: 3px;
+    padding: .4em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.picker button:disabled{
+    background-color: gray;
+}
+
+
+
+.picker label{
+    color:black;
+}
+
+.decrease:hover {
+    border-color: rgb(255, 59, 29);
+    background-color: rgb(255, 59, 29);
+    
+}
+
+.increase:hover{
+    border-color: rgb(62, 250, 20);
+    background-color: rgb(62, 250, 20);
+}
+
+.add:hover {
+    border-color: blue;
+    background-color: blue;
+}

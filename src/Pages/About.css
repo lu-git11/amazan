@@ -1,0 +1,28 @@
+.about{
+    padding: 10px;
+    color: whitesmoke;
+    min-height: 75vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    height: 9em;
+    padding: 1em;
+    animation: logo 20s linear infinite;
+}
+
+.about button{
+    width: 200px;
+    align-self: center;
+}

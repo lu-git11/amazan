@@ -1,0 +1,67 @@
+.menu {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    width: 100vw;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav h1{
+    color: whitesmoke;
+    padding: 3px;
+}
+
+nav h1:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 7px 5px whitesmoke;
+    transition: box-shadow 0.25s;
+}
+
+
+nav button{
+    background-color: rgb(4, 121, 255);
+    border-radius: 8px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(4, 121, 255);
+}
+
+nav .cart{
+    height: 35px;
+    width: 50px;
+    padding: 3px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+nav .cart:hover{
+    background-color: rgb(4, 121, 255);
+    border-radius: 10px;
+}
+
+.search button:hover{
+    border: 2px solid whitesmoke;
+}

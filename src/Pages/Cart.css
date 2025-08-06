@@ -1,0 +1,14 @@
+
+.cart{
+    height: auto;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+
+.cartCont{
+    display: flex;
+    justify-content: center;
+    min-height: 65vh;
+}
+

@@ -1,0 +1,43 @@
+.catalog {
+    align-self: center;
+    background-color: black;
+    color: whitesmoke;
+    width: 100vw;
+    min-height: 75vh;
+    padding: 10px;
+}
+
+.catBtn {
+    margin: 10px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+}
+
+.all {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    font-weight: bold;
+}
+
+.all:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 7px 5px rgb(4, 121, 255);
+    transition: box-shadow 0.25s;
+    color: rgb(4, 121, 255) ;
+}
+
+.catBtn:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 7px 5px whitesmoke;
+    transition: box-shadow 0.25s;
+}
+
+.catalog .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+

@@ -1,0 +1,52 @@
+.Home {
+    align-self: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 75vh;
+    width: 100vw;
+}
+
+
+.card h3{
+    font-size: 18px;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    height: 9em;
+    padding: 1em;
+    animation: logo 20s linear infinite;
+}
+
+.card-container{
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 200px;
+    height: 700px;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+
+.card Link{
+    align-self: baseline;
+}
