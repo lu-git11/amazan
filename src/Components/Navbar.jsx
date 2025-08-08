@@ -7,6 +7,7 @@ function Navbar(){
 
     let user = useContext(DataContext).user;
     let cart = useContext(DataContext).cart;
+    
 
     function getProducts() {
         let total = 0;
@@ -26,8 +27,13 @@ function Navbar(){
             </div>
             <Link to="/about">About</Link>
             <Link to="/catalog">Catalog</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link>
+            {isLoggedIn ?(
             <Link to="/cart"><img className='cart' src="/public/cart-shopping-solid.svg" alt=""/><span className='badge'>{getProducts()}</span></Link>
-        </nav>     
+            )
+            : null}
+            </nav>     
     );
 }
 

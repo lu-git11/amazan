@@ -1,0 +1,20 @@
+.signup {
+    align-self: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 75vh;
+    width: 100vw;
+}
+
+.signup form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-content: center;
+    width: 70%;
+}
+
+.signup input{
+    margin: 10px;
+    border-radius: 5px;
+}

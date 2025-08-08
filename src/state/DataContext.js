@@ -4,6 +4,10 @@ let DataContext = createContext({
     cart: [],
     user: {},
 
+
+    setUser: () => {},
+    clearUser: () => {},
+    
     addToCart: () => {},
     removeFromCart: () => {},
     clearCart: () => {},

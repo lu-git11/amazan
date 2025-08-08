@@ -5,7 +5,15 @@ import DataContext from "./DataContext";
 function Provider(props) {
 
     let [cart, setCart] = useState([]);
-    let [user, setUser] = useState({ userName: 'Jeff'});
+    let [user, setStateUser] = useState({ userName: 'Jeff'});
+
+    function setUser(user) {
+        setStateUser(user);
+    }
+
+    function clearUser() {
+        setStateUser({});
+    }
 
     function addToCart(prod) {
         let copy = [...cart];
@@ -25,6 +33,8 @@ function Provider(props) {
         <DataContext.Provider value={{
             cart: cart,
             user: user,
+            setUser: setUser,
+            clearUser: clearUser,
             addToCart: addToCart,
             removeFromCart: removeFromCart,
             clearCart: clearCart

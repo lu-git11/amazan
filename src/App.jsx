@@ -2,6 +2,8 @@
 import './App.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
 import Home from './Pages/home'
 import About from './Pages/About'
 import Catalog from './Pages/Catalog'
@@ -20,12 +22,14 @@ function App() {
     <Provider>
     <BrowserRouter>
       <Navbar></Navbar>
-
+      
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/home' element={ <Home /> } />
         <Route path='/about' element={ <About /> } />
         <Route path='/catalog' element={ <Catalog /> } />
+        <Route path='/login' element={ <Login />} />
+        <Route path='/signup' element={ <Signup />} />
         <Route path='/cart' element={ <Cart /> } />
       </Routes>
       
@@ -33,7 +37,7 @@ function App() {
       <Footer></Footer>
     </BrowserRouter>
     </Provider>
-  )
+  );
 }
 
 export default App

@@ -27,6 +27,14 @@ export let mockCatalog = [
 
 export let mockCategory = ['Fruit', 'Animal', 'Hat'];
 
+export let mockUser = [
+
+    {
+        'username': 'jeff',
+        'password': 'password',
+    },
+];
+
 class DataService {
     async getCatalog(){
         return mockCatalog;
@@ -38,7 +46,12 @@ class DataService {
 
      async saveProd(product){
         /* let response = await axios.post("http://127.0.0.1:8000/api/products", product);
-        return response.data;   */
+        return response.data; 
+        https://jsonplaceholder.typicode.com/todos  */
+    }
+
+    async getUser(){
+        return mockUser;
     }
 }
 
