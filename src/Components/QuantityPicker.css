@@ -43,7 +43,7 @@ label{
     background-color: rgb(62, 250, 20);
 }
 
-.cart:hover {
-    border-color: blue;
-    background-color: blue;
+.add:hover {
+    border-color: rgb(4, 121, 255);
+    background-color: rgb(4, 121, 255);
 }

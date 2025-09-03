@@ -2,13 +2,29 @@
     align-self: center;
     background-color: black;
     color: whitesmoke;
-    height: 75vh;
+    min-height: 110vh;
     width: 100vw;
+    padding-top: 120px;
 }
 
 
 .card h3{
     font-size: 18px;
+}
+
+.sidebar{
+    padding: 10px;
+    margin: 10px;
+}
+.sidebar h3{
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
 }
 
 @keyframes logo {
@@ -29,7 +45,13 @@
 .card-container{
     display: flex;
     height: 300px;
+    padding-right: 110px;
+    padding-left: 40px;
+    width: 85%;
+    margin: 5px;
     justify-content: space-evenly;
+    justify-items: center;
+    
 }
 
 .card {
@@ -42,11 +64,36 @@
 }
 
 img {
-    height: 150px;
+    height: 100px;
     width: 150px;
     align-self: center;
 }
 
 .card Link{
     align-self: baseline;
+}
+
+@media(max-width:700px){
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        height: 90px;
+    }
+
+    .card {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+
+}
+
+    .Home{
+        height: 160vh;
+    }
+    .sidebar{
+    display: none;
+    }
 }

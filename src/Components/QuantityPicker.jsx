@@ -1,12 +1,14 @@
 
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './QuantityPicker.css';
 import DataContext from "../state/DataContext";
 
 function QuantityPicker(props){
     let [quantity, setQuantity] = useState(1);
 
-    let addToCart = useContext(DataContext).addToCart;
+    let { addToCart, isLoggedIn } = useContext(DataContext);
+    let navigate = useNavigate();
 
     function increase(){
         let val = quantity + 1;
@@ -23,6 +25,12 @@ function QuantityPicker(props){
     }
 
     function add(){
+
+        if (!isLoggedIn) {
+            navigate("/login");
+            return;
+        }
+
         let prodForCart = {...props.data, quantity};
         alert("Item added!", prodForCart);
         addToCart(prodForCart);
@@ -33,9 +41,10 @@ function QuantityPicker(props){
             <button className="decrease" disabled={quantity == 0} onClick={decrease}>-</button>
             <label>{quantity}</label>
             <button className="increase" onClick={increase}>+</button>
-            <button className="cart" onClick={add}>Add to Cart</button>
+            <button className="add" onClick={add}>Add to Cart</button>
         </div>
     )
 }
+
 
 export default QuantityPicker;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DataService from '../services/DataService';
 import './Product.css';
 import QuantityPicker from "./QuantityPicker";
 
@@ -19,8 +20,10 @@ function Product(props){
         <div className="product">
             <div>
                 <img src={props.item.image}></img>
+                
             </div>
             <h3>{props.item.title}</h3>
+            <i className="fa-solid fa-heart"></i>
             <div className="price">
                 <label>Price: ${props.item.price.toFixed(2)}</label>
                 <label>Total: ${getTotal()}</label>

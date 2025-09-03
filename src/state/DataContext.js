@@ -1,9 +1,9 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 let DataContext = createContext({
+    isLoggedIn: false,
     cart: [],
     user: {},
-
 
     setUser: () => {},
     clearUser: () => {},
@@ -11,6 +11,7 @@ let DataContext = createContext({
     addToCart: () => {},
     removeFromCart: () => {},
     clearCart: () => {},
-})
+});
+
 
 export default DataContext;

@@ -2,8 +2,10 @@
     align-self: center;
     background-color: black;
     color: whitesmoke;
-    height: 75vh;
+    height: 100vh;
     width: 100vw;
+    padding-top: 120px;
+    margin: 0;
 }
 
 .signup form{
@@ -11,10 +13,38 @@
     flex-direction: column;
     justify-self: center;
     align-content: center;
-    width: 70%;
+    width: 30%;
 }
 
 .signup input{
-    margin: 10px;
+    margin: 15px;
     border-radius: 5px;
+}
+
+.signup button{
+    margin: 10px;
+    width: 150px;
+    align-self: center;
+    background-color: rgb(4, 121, 255);
+    border-radius: 8px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border: 3px solid transparent;
+    padding: 0.4em;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.signup button:hover{
+    border: 3px solid whitesmoke;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 4px;
 }

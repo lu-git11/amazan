@@ -1,4 +1,4 @@
-.login {
+.admin {
     align-self: center;
     background-color: black;
     color: whitesmoke;
@@ -7,7 +7,7 @@
     padding-top: 120px;
 }
 
-.login form{
+.admin form{
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -15,12 +15,12 @@
     width: 30%;
 }
 
-.login input{
+.admin input{
     margin: 15px;
     border-radius: 5px;
 }
 
-.login button{
+.admin button{
     margin: 10px;
     width: 150px;
     align-self: center;
@@ -38,6 +38,6 @@
     transition: border-color 0.25s;
 }
 
-.login button:hover{
+.admin button:hover{
     border: 3px solid whitesmoke;
 }

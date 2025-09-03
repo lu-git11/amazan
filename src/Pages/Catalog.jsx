@@ -10,7 +10,7 @@ function Catalog(){
     let [allCat, setAllCategories] = useState([]);
 
     async function loadProduct() {
-        let allProd = await DataService.getCatalog();
+        let allProd = await DataService.getProducts();
         setAllProduct(allProd);
     }
 
