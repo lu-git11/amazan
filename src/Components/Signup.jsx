@@ -44,7 +44,7 @@ let Signup = () => {
         let value = e.target.value;
         setConfirmPassword(value);
         if (value !== password){
-            setConfirmPasswordError("password does not match")
+            setConfirmPasswordError("Password does not match")
         } else {
             setConfirmPasswordError("");
         }
@@ -91,7 +91,7 @@ let Signup = () => {
                 {usernameError && <p className="error">{usernameError}</p>}
                 <input 
                     type="password"
-                    placeholder="Enter password"
+                    placeholder="Enter Password"
                     value={password}
                     onChange={validPassword}
                     required
@@ -105,7 +105,7 @@ let Signup = () => {
                 )}
                 <input 
                     type="password"
-                    placeholder="Confirm password"
+                    placeholder="Confirm Password"
                     value={confirmPassword}
                     onChange={confirmValidPassword}
                     required

@@ -64,7 +64,7 @@
 }
 
 img {
-    height: 100px;
+    height: 175px;
     width: 150px;
     align-self: center;
 }
@@ -79,7 +79,7 @@ img {
         align-items: center;
         padding: 5px;
         width: 100%;
-        height: 90px;
+        height: fit-content;
     }
 
     .card {
@@ -87,12 +87,8 @@ img {
     margin: 5px;
     padding: 5px;
     align-content: center;
-
-}
-
-    .Home{
-        height: 160vh;
     }
+
     .sidebar{
     display: none;
     }

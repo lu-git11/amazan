@@ -32,7 +32,6 @@ function QuantityPicker(props){
         }
 
         let prodForCart = {...props.data, quantity};
-        alert("Item added!", prodForCart);
         addToCart(prodForCart);
     }
 

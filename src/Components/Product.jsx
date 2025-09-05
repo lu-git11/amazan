@@ -20,10 +20,11 @@ function Product(props){
         <div className="product">
             <div>
                 <img src={props.item.image}></img>
-                
             </div>
-            <h3>{props.item.title}</h3>
-            <i className="fa-solid fa-heart"></i>
+            <i>
+                <img className='heart' src="/public/heart-solid-full.svg" alt="" />
+            </i>
+            <h3>{props.item.title}</h3>           
             <div className="price">
                 <label>Price: ${props.item.price.toFixed(2)}</label>
                 <label>Total: ${getTotal()}</label>

@@ -2,12 +2,14 @@ import './Cart.css';
 import DataContext from '../state/DataContext';
 import DataService from '../services/DataService';
 import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Cart() {
 
     let cart = useContext(DataContext).cart;
     let clearCart = useContext(DataContext).clearCart;
     let removeFromCart = useContext(DataContext).removeFromCart;
+    let navigate = useNavigate();
 
     function totalProducts() {
         let total = 0;
@@ -58,10 +60,14 @@ function Cart() {
                 <div className='sideCart'>
                     <p>Total:</p>
                     <p>${Total()}</p>
-                    {cart.length > 0 ?
-                    <button onClick={clear} >Empty</button>
-                    : <p>Add more</p>
-                    }
+                    {cart.length > 0 ? (
+                        <>
+                            <button onClick={clear} >Empty</button>
+                            <button className='checkout'>Proceed to Checkout</button>
+                        </>
+                    ) : (
+                        <button onClick={() => navigate("/catalog")}>Add more</button>
+                    )}
                 </div>
             </div>
         </div>

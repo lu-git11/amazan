@@ -6,6 +6,7 @@
     width: 225px;
     align-items: center;
     margin: 10px;
+    position: relative;
 }
 
 .product img{
@@ -24,10 +25,18 @@
     line-height: 7px;
 }
 
-.product i{
-    height: 20px;
+.product .heart{
     width: 20px;
-    color: red;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 182px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover .heart{
+    opacity: 1;
 }
 
 

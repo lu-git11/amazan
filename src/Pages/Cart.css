@@ -78,3 +78,15 @@
     text-align: center;
     justify-items: center;
 }
+
+.sideCart .checkout{
+    height: fit-content;
+    
+}
+
+.sideCart .checkout:hover{
+    color: rgb(4, 121, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 7px 5px rgb(4, 121, 255);
+    transition: box-shadow 0.25s;
+}
